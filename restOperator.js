@@ -25,7 +25,7 @@
  //calculator. using by simple function and pass parameters avrage of two no
  function calculator(a,b,c){
  	 if(a+b==20){
- 		return c*2
+ 		return 
  	}
  }
 console.log("result=",calculator(10,10))

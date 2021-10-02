@@ -24,4 +24,13 @@ console.log(add());//output 40
  	return a+b;
 
  }
- console.log('heelo',main(4,8))//ydi hm funtion ko uske parameter m hi pass karde to bi hamara code work karega .ouptu 12 h
+ console.log('heelo=',main(4,8))//ydi hm funtion ko uske parameter m hi pass karde to bi hamara code work karega .ouptu hello=12
+
+ //example-2
+ function text(a,b,c=text1()) {
+     return a+b+c;
+ }
+ console.log("experiment=",text(2,4))//output =11 becouse 2+4+text1=5||=11
+ function text1() {
+     return 5;
+ }
