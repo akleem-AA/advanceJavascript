@@ -249,11 +249,12 @@ function hide(){
     console.log(2*"4")//4
     console.log(3*'4'/2)//6
     console.log(3*"6"/"3")//3*6/3=6
-    console.log(5*4/"5")
+    console.log(5*4/"5")                                                      
 
+                                                      
 
-
-    //how to remove a duplicate no of an array..
+                                                      
+    //how to remove a duplicate no of an Array....
     // let dupArray=[2,3,2,5,3,2,6,7]//expected output like [2,3,5,6,7]
     // // console.log(new Set(dupArray))//it a special function that provide remove a duplicate element of an array
     // let remDuplicate=new Set(dupArray)
@@ -263,3 +264,61 @@ function hide(){
     let arrMultipleValue=[1,2,3,2,4,4,5,3,'aklem','akleem','khan','mak']
     let arrResult=[...new Set(arrMultipleValue)]
     console.log("result",arrResult)
+
+
+//how to add a array number by using multiple variable
+function sum(a,b,c,d,e,f,g,) {
+    return a+b+c+d+e+f+g
+}
+let numArray=[1,2,3,4,5,6,7]
+let resultMultipleVariable=sum(...numArray)
+console.log("result multiple variable",resultMultipleVariable)
+
+
+
+//let say A man l
+// let oneDayHour=24
+// function clockDay(){
+  
+//     b=30;
+//     return a*b;
+// }
+// console.log(clockDay())
+// function showResult(day) {
+//     return clockDay()
+// }
+
+
+
+// QUESTION-25-what is closure in js
+/*A closure is the combination of a function its surrounding state (the lexical environment). In other words,
+   a closure gives you access to an outer function’s scope from an inner function. In JavaScript,*/
+//example-------
+function outer() {
+    let a=100;
+    function inner(){
+        console.log(a)//perent value
+    }
+    return inner//if inner() its work print 100
+}
+// console.log("closure function",outer())//output undefined
+// outer()//it not work 
+// outer()()//its work
+//we can assign the value of a variable
+let closure=outer()
+closure()//its work
+
+
+
+
+//QUESTION--what is map function in js
+    //creates an array by calling a specific function on each element present in the parent array
+////example....
+ let arrMap=[2,4,6,8,10,12]
+ let resutMapArr=arrMap.map(function binary(a){
+    return a.toString(2)
+ })
+ console.log("result of map array",resutMapArr)//output convert into binary item
+ //same work with arrow fumction
+ let arrowMap=arrMap.map((x) => x.toString(2))
+ console.log("octa",arrowMap)//its work
