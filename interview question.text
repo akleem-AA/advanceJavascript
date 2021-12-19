@@ -1,0 +1,70 @@
+1-If I want images to scale when they are larger then their containing block but not to be stretched large, I would.
+Set max width:100% on the image
+Set width 100% on the image
+Set width 0% on image
+Set width contain on image
+
+2-The flex container shown below has three children elements. Which two properties, when applied to a flex container, will center its flex items along both axes?
+justify-self: center;
+vertical-align: middle;
+justify-content: center;
+align-items: center;
+align-self: center;
+text-align
+
+3-Which of the following is valid method for providing multiple-resolution images to different devices?
+
+4-In which cases will the style for the selector "div + p {color: red}" be applied?
+The style will applied to <div> tag containing <p> tag.
+the style will be applied to <p> tag placed after <div> tag.
+The style will be applied to <div> tag placed before <p> tag
+the style will be applied to <p> tag placed inside <div> tag
+The selector is invalid.
+
+
+5-Which selector adds the style to the first row of the table?
+table tr:first -letter
+table tr:first
+table tr:first-row
+table tr:first-child
+None of the above
+
+
+6-We are going to create new CSS variable with the value "1rem". Which of these is the correct syntax?
+$padding 1rem;
+var(--padding): 1rem;
+--padding: 1rem;
+padding: var(1rem)
+
+
+javasxript
+1-Which of the following would be the correct way to read the "age" property of a "person" object?
+person[age]
+person.age
+person : : age
+person['age']
+
+2-What is "scoping function" is useful for?
+Creating a shared, private scope for the code data inside it
+Keeping some data functions private while revealing others
+Avoiding creating global variable and functions
+All the above
+
+
+3-https://lh4.googleusercontent.com/QRE9k7hiVxCJdi9AkaO3yvLm2QrBfV6UKkVprFhODwWUjgTY-aBcTXmyEQXioDiuu-iZlMoRkGNj9MitRTiFTuAhvMjpQX4CiLs6FVt3yauQLc942ktQN7UAuojLjKMcjA=w740
+
+
+4-https://lh5.googleusercontent.com/skJVJN05GhRQ_kPesKXTF2BhxhIYWX0zNKVCm3G9BYXWpST0i2FyvPRJrxR6Hkhl328BfBvqalooJnKZiBicUBS6dRAksmbUgGfl0EiAnnVY_NQLlP1a1N-3jLrYNi1Z6w=w257
+
+5-Which of the following statements are true?
+JavaScript can read and write HTML elements
+JavaScript can react to events
+JavaScript can create cookies.
+
+
+
+6-Which of the following can be used to handle the user clicking on a node?
+node.onclick(myFunction)
+node.attachEvent("onclick", myFunction)
+node.addEventListener("click", myFunction, false)
+node.addEventListener("onclick", myFunction, false)

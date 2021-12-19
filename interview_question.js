@@ -200,18 +200,18 @@
 
 // */
 
-// ////how many type of function in js ......
+//QUESTION-10 ////how many type of function in js ......
 // // 1.. we have fist function is function statment
 //  function statment(){
 //     console.log("a aits fist funtion called funtion statmet")
 //  }
 // statment()//it simple to called
 
-// // 2... function expression ............. we can assing the function with a variable {
+// QUESTION-11 // 2... function expression ............. we can assing the function with a variable {
 //     let expression=function() {
 //         console.log("it expression function")
 //     }
-//  // how to used and what is callback function
+//QUESTION-13  // how to used and what is callback function
 // //callback function is a function which used as a parameter to another funtion.
 // function add(a,b){
 //     return a+b;
@@ -221,7 +221,7 @@
 // }
 // callback()
 
-/////// how to hide a element by using js
+///QUESTION-14 //// how to hide a element by using js
 function hide(){
     if(document.getElementById('hide').style.display == 'block')
          document.getElementById('hide').style.display='none';
@@ -238,7 +238,7 @@ function hide(){
 
     }
 
-    ///what is the output of this code 
+  // QUESTION-15-/what is the output of this code 
     console.log(2+"2")//output ==2+string '2' =22//reasion becouse + is add a number and string(concate)
     console.log(2-"2")//ouptu ==0//reasion becouse it sting is convert into number 2-2 =0
     console.log(4+"5"*2)//4+(5*2)=14
@@ -254,7 +254,7 @@ function hide(){
                                                       
 
                                                       
-    //how to remove a duplicate no of an Array....
+    //QUESTION-16-how to remove a duplicate no of an Array....
     // let dupArray=[2,3,2,5,3,2,6,7]//expected output like [2,3,5,6,7]
     // // console.log(new Set(dupArray))//it a special function that provide remove a duplicate element of an array
     // let remDuplicate=new Set(dupArray)
@@ -266,7 +266,7 @@ function hide(){
     console.log("result",arrResult)
 
 
-//how to add a array number by using multiple variable
+//QUESTION-17-how to add a array number by using multiple variable
 function sum(a,b,c,d,e,f,g,) {
     return a+b+c+d+e+f+g
 }
@@ -290,7 +290,7 @@ console.log("result multiple variable",resultMultipleVariable)
 
 
 
-// QUESTION-25-what is closure in js
+// QUESTION-18-what is closure in js
 /*A closure is the combination of a function its surrounding state (the lexical environment). In other words,
    a closure gives you access to an outer function’s scope from an inner function. In JavaScript,*/
 //example-------
@@ -309,9 +309,16 @@ let closure=outer()
 closure()//its work
 
 
+// const akleem="hello"
+// const akleem="akleem789"
+// console.log(akleem)
 
 
-//QUESTION--what is map function in js
+
+
+
+
+//QUESTION .26--what is map function in js
     //creates an array by calling a specific function on each element present in the parent array
 ////example....
  let arrMap=[2,4,6,8,10,12]
@@ -322,3 +329,15 @@ closure()//its work
  //same work with arrow fumction
  let arrowMap=arrMap.map((x) => x.toString(2))
  console.log("octa",arrowMap)//its work
+
+
+
+ filterObj(obj) {
+    const newObj = {};
+    Object.keys(obj).forEach(key => {
+      if (key !== 'password_confirmation') {
+        newObj[key] = obj[key];
+      }
+    })
+    return newObj
+}
